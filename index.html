@@ -45,6 +45,18 @@
     border-radius: 16px;
     padding: 32px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+  .dept-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    border-color: rgba(56, 189, 248, 0.4);
+  }
+  .dept-card .author {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-left: 8px;
   }
   .dept-card .badge {
     display: inline-block;
@@ -108,7 +120,7 @@
 <main>
   <div class="dept-card">
     <span class="badge">공과대학</span>
-    <h2>컴퓨터공학과</h2>
+    <h2>컴퓨터공학과<span class="author">김민애</span></h2>
     <p class="desc">
       컴퓨터공학과는 소프트웨어, 하드웨어, 알고리즘, 인공지능 등
       컴퓨터 과학 전반에 대한 이론과 실무 역량을 기르는 학과입니다.
