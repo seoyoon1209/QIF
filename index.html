@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학과소개</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card-bg: #1e293b;
+    --accent: #38bdf8;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Pretendard", "Malgun Gothic", -apple-system, sans-serif;
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  header {
+    padding: 60px 20px 40px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.4rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  header p {
+    color: var(--text-muted);
+    margin: 0;
+    font-size: 1rem;
+  }
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+  }
+  .dept-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(148, 163, 184, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  }
+  .dept-card .badge {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.15);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .dept-card h2 {
+    margin: 0 0 16px;
+    font-size: 1.8rem;
+  }
+  .dept-card p.desc {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin: 0 0 24px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .info-item {
+    background: rgba(148, 163, 184, 0.08);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .info-item .label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+  }
+  .info-item .value {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tag {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>학과소개</h1>
+  <p>우리 팀이 소개하는 학과들을 만나보세요</p>
+</header>
+<main>
+  <div class="dept-card">
+    <span class="badge">공과대학</span>
+    <h2>컴퓨터공학과</h2>
+    <p class="desc">
+      컴퓨터공학과는 소프트웨어, 하드웨어, 알고리즘, 인공지능 등
+      컴퓨터 과학 전반에 대한 이론과 실무 역량을 기르는 학과입니다.
+      프로그래밍, 자료구조, 운영체제, 데이터베이스, 네트워크 등
+      다양한 분야를 배우며, 급변하는 IT 산업을 이끌어갈 인재를 양성합니다.
+    </p>
+    <div class="info-grid">
+      <div class="info-item">
+        <div class="label">단과대학</div>
+        <div class="value">공과대학</div>
+      </div>
+      <div class="info-item">
+        <div class="label">주요 분야</div>
+        <div class="value">소프트웨어 · AI</div>
+      </div>
+      <div class="info-item">
+        <div class="label">졸업 후 진로</div>
+        <div class="value">개발자 · 연구원</div>
+      </div>
+    </div>
+    <div class="tags">
+      <span class="tag">알고리즘</span>
+      <span class="tag">자료구조</span>
+      <span class="tag">인공지능</span>
+      <span class="tag">웹/앱 개발</span>
+      <span class="tag">데이터베이스</span>
+    </div>
+  </div>
+</main>
+</body>
+</html>
